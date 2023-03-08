@@ -15,19 +15,26 @@ public class Planet extends SolarSystem {
         this.distanceFromStar = distanceFromStar;
     }
 
+    // Shared Methods
     @Override
     public String toString() {
         return "Age: " + age + " Mass: " + mass + " Number Of Moons: " + numOfMoons + " Distance From Star: " + distanceFromStar;
     }
 
+    // Unique Methods
+    public void doesContainLife() {
+        System.out.println("Planet does contain life");
+    }
+
+    public void doesNotContainLife() {
+        System.out.println("Planet does not contain life");
+    }
+
     
-
-
-
     // Accessors
     @Override
-    public int getAge() {
-        return this.age;
+    public String getAge() {
+        return "The planet is " + this.age + " years old";
     }
 
     public int getMass() {
@@ -40,6 +47,15 @@ public class Planet extends SolarSystem {
 
     public int distanceFromStar() {
         return this.distanceFromStar;
+    }
+
+    // Mutators
+    public void setDistanceFromStar(int distanceFromStar) {
+        this.distanceFromStar = distanceFromStar;
+    }
+
+    public void setNumOfMoons(int numOfMoons) {
+        this.numOfMoons = numOfMoons;
     }
 
 }

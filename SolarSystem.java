@@ -28,7 +28,11 @@ public class SolarSystem {
 
     // Unique Methods
     public void move() {
-        System.out.println("The Solar System moves through the solar system.");
+        System.out.println("The Solar System moves through the galaxy.");
+    }
+
+    public void orbit() {
+        System.out.println("The planets orbit in the solar system");
     }
 
     public void containsLife() {
@@ -49,7 +53,7 @@ public class SolarSystem {
         return this.numberOfStars;
     }
 
-    public int getAge() {
+    public String getAge() {
         return "The Solar System is: " + age + " years old";
     }
 
